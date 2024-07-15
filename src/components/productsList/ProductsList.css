@@ -1,0 +1,58 @@
+section.productsList {
+    width: 100%;
+    padding: 0px 20px 20px 0px;
+    box-sizing: border-box;
+}
+
+section.productsList > div {
+    width: calc(100% / 4);
+    float: left;
+    padding: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section.productsList > div > figure,
+section.productsList > div > figure > img {
+    width: 100%;
+}
+
+section.productsList > div > div {
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+}
+
+section.productsList > div > div > h2,
+section.productsList > div > div > p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.productsList > div > a {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    bottom: 0px;
+    left: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+section.productsList > div:hover > a {
+    display: flex;
+}
+
+section.productsList > div > a > img {
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,31 @@
+header.mainMenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header.mainMenu > nav,
+header.mainMenu > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.mainMenu > nav > a {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+}
+
+header.mainMenu > nav > a.selected {
+    border-bottom-color: #ff5722;
+}
+
+header.mainMenu > nav > a > svg {
+    margin-right: 10px;
+}

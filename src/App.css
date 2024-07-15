@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+figure, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  color: #282c34;
+}
+
+input:focus-visible {
+    outline: none !important;
+}

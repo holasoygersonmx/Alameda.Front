@@ -1,5 +1,12 @@
 import './ShoppingCart.css';
 
-export const ShoppingCart = () => {
+import { useEffect } from "react";
+
+export const ShoppingCart = ({setPage}) => {
+
+    useEffect(() => {
+        setPage('shoppingCart');
+    }, []);
+
     return <section className='shoppingCart'></section>
 }

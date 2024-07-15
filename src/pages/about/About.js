@@ -1,5 +1,12 @@
 import './About.css';
 
-export const About = () => {
+import { useEffect } from "react";
+
+export const About = ({setPage}) => {
+
+    useEffect(() => {
+        setPage('about');
+    }, []);
+
     return <section className='about'></section>
 }

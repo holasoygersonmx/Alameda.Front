@@ -8,11 +8,16 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 
+import { useState } from "react";
+
 function App() {
+
+  const[page, setPage] = useState('home');
+
   return (
     <div className="App">
-      <MainMenu />
-      <AppRouter />
+      <MainMenu page={page} />
+      <AppRouter setPage={setPage} />
     </div>
   );
 }

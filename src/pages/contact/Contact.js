@@ -1,5 +1,12 @@
 import './Contact.css';
 
-export const Contact = () => {
+import { useEffect } from "react";
+
+export const Contact = ({setPage}) => {
+
+    useEffect(() => {
+        setPage('contact');
+    }, []);
+
     return <section className='contact'></section>
 }
